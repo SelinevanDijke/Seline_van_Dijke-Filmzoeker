@@ -46,5 +46,14 @@ label {
   list-style: none;
 }
 
-#movie-list li img {
+@media screen and (max-width: 1028px) {
+  #movie-list {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #movie-list {
+    grid-template-columns: 100%;
+  }
 }

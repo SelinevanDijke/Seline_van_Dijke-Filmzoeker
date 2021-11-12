@@ -2,25 +2,22 @@ const addMoviesToDom = (movies) => {
 
     const movieList = document.getElementById("movie-list");
         movieTitles = movies.map(movies => {
-        const movieTitles = movies.Title;
-        const moviePoster = movies.Poster;
-        const movieId = movies.imdbID;
+            const movieTitles = movies.Title;
+            const moviePoster = movies.Poster;
+            const movieId = movies.imdbID;
 
-        const addPosterImg = document.createElement("img");
-        const newLi = document.createElement("li");
-        const addA = document.createElement("a");   
-            
+            const addPosterImg = document.createElement("img");
+            const newLi = document.createElement("li");
+            const addA = document.createElement("a");   
+                
             movieList.appendChild(newLi);
             newLi.innerHTML = movieTitles;
             newLi.appendChild(addA);
             addA.appendChild(addPosterImg);
             addPosterImg.src = moviePoster;
             
-            const addLinkToPoster = () => {
-                addA.href = "https://www.imdb.com/title/" + movieId;
-            }
-            addLinkToPoster();
-                
+            addA.href = "https://www.imdb.com/title/" + movieId;
+ 
         });
 }
 
@@ -56,7 +53,6 @@ const removeMovies = () => {
     parent.innerHTML = "";
 }
 
-
 const filterMovies = (wordInMovieTitle) => {
     const filteredMovies = movies.filter((movie) => {
         return movie.Title.includes(wordInMovieTitle)
@@ -73,3 +69,4 @@ const filterLatestMovies = () => {
     removeMovies();
     console.log(addMoviesToDom(filteredLatestMovies))
 }
+addMoviesToDom(movies);
