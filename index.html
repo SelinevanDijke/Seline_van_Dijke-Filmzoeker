@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Filmzoeker</title>
+        <script defer type="text/javascript" src="movies.js"></script>
+        <script defer type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welkom bij Seline's Filmzoeker!</h1>
+            <nav>
+                <input type="radio" id="latest-movies" name="select-movie" value="latestmovies">
+                <label for="latest-movies">Films vanaf 2014</label>
+
+                <input type="radio" id="avenger-movies" name="select-movie" value="avenger-movies">
+                <label for="avenger-movies">Avenger films</label>
+
+                <input type="radio" id="xmen-movies" name="select-movie" value="xmen-movies">
+                <label for="xmen-movies">X-men films</label>
+
+                <input type="radio" id="princess-movies" name="select-movie" value="princess-movies">
+                <label for="princess-movies">Princess films</label>
+
+                <input type="radio" id="batman-movies" name="select-movie" value="batman-movies">
+                <label for="batman-movies">Batman films</label>
+            </nav>
+        </header>
+        <main id="main-list">
+            <ul id="movie-list">
+                
+            </ul>
+        </main>
+    </body>
+</html>

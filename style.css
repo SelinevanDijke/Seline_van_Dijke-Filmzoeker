@@ -1,0 +1,50 @@
+/* Style hoofdpagina */
+h1,
+h2,
+p,
+a,
+li,
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 50px;
+}
+
+#movie-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#movie-list li {
+  font-size: 18px;
+  width: 33%;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+#movie-list li img {
+}
