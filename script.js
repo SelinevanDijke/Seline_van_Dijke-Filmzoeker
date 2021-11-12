@@ -22,7 +22,6 @@ const addMoviesToDom = (movies) => {
             addLinkToPoster();
                 
         });
-    
 }
 
 const getRadioButtons = document.getElementsByName("select-movie");
@@ -47,12 +46,9 @@ getRadioButtons.forEach((radiobtn) => {
                 case 'batman-movies':
                     filterMovies("Batman");
             }
-
         }
         handleOnChangeEvent()
-
     })
-    
 })
 
 const removeMovies = () => {
@@ -68,7 +64,6 @@ const filterMovies = (wordInMovieTitle) => {
     })
     removeMovies();
     console.log(addMoviesToDom(filteredMovies))
-
 }
 
 const filterLatestMovies = () => {
@@ -78,7 +73,3 @@ const filterLatestMovies = () => {
     removeMovies();
     console.log(addMoviesToDom(filteredLatestMovies))
 }
-
-
-
-// https://www.imdb.com/title/tt1877832/
